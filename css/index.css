@@ -1,0 +1,612 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 12% 4rem;
+  background: black;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1, 1);
+}
+
+.logo span {
+  text-shadow: 0 0 25px rgb(252, 163, 17);
+}
+
+.navbar a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+  color: rgb(252, 163, 17);
+  border-bottom: 3px solid rgb(252, 163, 17);
+  text-shadow: 0 0 25px rgb(252, 163, 17), 0 0 50px rgb(252, 163, 17);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 12% 10rem;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+span {
+  color: solid rgb(252, 163, 17);
+}
+
+.logo span {
+  color: solid rgb(252, 163, 17);
+}
+
+.home-content h3 {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 3.5rem;
+}
+
+.home-content h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.picture {
+  border-radius: 50%;
+}
+
+.picture img {
+  position: relative;
+  top: 3rem;
+  width: 32vw;
+  border-radius: 100%;
+  box-shadow: 0 0 25px rgb(252, 163, 17);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.picture img:hover {
+  box-shadow: 0 0 25px rgb(252, 163, 17), 0 0 50px rgb(252, 163, 17), 0 0 100px rgb(252, 163, 17);
+}
+
+.home-content p {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  max-width: 1000px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 8rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background: black;
+}
+
+.about-img i {
+  position: relative;
+  width: 30vw;
+  cursor: pointer;
+  font-size: 20rem;
+  color: rgb(252, 163, 17);
+}
+
+.about-img i:hover {
+  border-color: rgb(252, 163, 17);
+  transform: scale(1.5);
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+}
+
+.text-animation span {
+  position: relative;
+}
+
+.text-animation span::before {
+  content: "Industrial Engineer";
+  color: rgb(252, 163, 17);
+  animation: words 20s infinite;
+}
+
+.text-animation span::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 2px solid white;
+  right: -8px;
+  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid white;
+  }
+}
+@keyframes words {
+  0%, 20% {
+    content: "a Good Lider";
+  }
+  21%, 40% {
+    content: "Focus on Results";
+  }
+  41%, 60% {
+    content: "Excelent at TeamWork";
+  }
+  61%, 80% {
+    content: "Analytical";
+  }
+  81%, 100% {
+    content: "Creative";
+  }
+}
+@keyframes typing {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+    width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+    width: calc(100% + 8px);
+  }
+}
+.projects h2 {
+  margin-bottom: 5rem;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-container .project-box {
+  flex: 1 1 40rem;
+  background-color: black;
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid rgb(252, 163, 17);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.project-container .project-box:hover {
+  border-color: rgb(252, 163, 17);
+  transform: scale(1.02);
+  background-color: white;
+  color: black;
+}
+
+.project-box i {
+  font-size: 7rem;
+  color: rgb(252, 163, 17);
+  font-size: 7rem;
+}
+
+.project-box h3 {
+  font-size: 2.6rem;
+}
+
+.project-box p {
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
+}
+
+.skills h2 {
+  margin-bottom: 5rem;
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skills-container .skills-box {
+  flex: 1 1 40rem;
+  background-color: black;
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.skills-container .skills-box:hover {
+  border-color: rgb(252, 163, 17);
+  transform: scale(1.02);
+  background-color: white;
+  color: black;
+}
+
+.skills-box i {
+  font-size: 7rem;
+  color: rgb(252, 163, 17);
+}
+
+.skills-box h3 {
+  font-size: 2.6rem;
+}
+
+.workexperience-img img {
+  position: relative;
+  width: 25vw;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.workexperience-img img:hover {
+  box-shadow: 0 0 25px rgb(111, 158, 64), 0 0 50px rgb(111, 158, 64), 0 0 100px rgb(111, 158, 64);
+}
+
+.workexperience-content h1 {
+  text-align: center;
+  font-size: 8rem;
+  color: rgb(111, 158, 64);
+}
+
+.workexperience-content h2 {
+  text-align: left;
+  line-height: 1.5;
+  color: rgb(108, 107, 107);
+}
+
+.workexperience-content p {
+  font-size: 1.6rem;
+  margin: 2rem;
+}
+
+.workexperience-content h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.workexperience-img2 img {
+  position: relative;
+  width: 25vw;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.workexperience-img2 img:hover {
+  box-shadow: 0 0 25px rgb(168, 4, 52), 0 0 50px rgb(168, 4, 52), 0 0 100px rgb(168, 4, 52);
+}
+
+.workexperience-content2 h1 {
+  text-align: center;
+  font-size: 8rem;
+  color: rgb(168, 4, 52);
+}
+
+.workexperience-content2 h2 {
+  text-align: left;
+  line-height: 1.5;
+  color: rgb(108, 107, 107);
+}
+
+.workexperience-content2 p {
+  font-size: 1.6rem;
+  margin: 2rem;
+}
+
+.workexperience-content2 h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.workexperience-img3 img {
+  position: relative;
+  width: 25vw;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.workexperience-img3 img:hover {
+  box-shadow: 0 0 25px rgb(236, 108, 6), 0 0 50px rgb(236, 108, 6), 0 0 100px rgb(236, 108, 6);
+}
+
+.workexperience-content3 h1 {
+  text-align: center;
+  font-size: 8rem;
+  color: rgb(236, 108, 6);
+}
+
+.workexperience-content3 h2 {
+  text-align: left;
+  line-height: 1.5rem;
+  color: rgb(155, 20, 28);
+}
+
+.workexperience-content3 p {
+  font-size: 1.6rem;
+  margin: 2rem;
+}
+
+.workexperience-content3 h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.slide {
+  position: relative;
+  margin-top: 2px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.slide-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: calc(400px + 3em);
+}
+
+.slide-open:checked + .slide-item {
+  position: static;
+  opacity: 100;
+}
+
+.slide-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.slide-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.slide-control.prev {
+  left: 2%;
+}
+
+.slide-control.next {
+  right: 2%;
+}
+
+.slide-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+  display: block;
+}
+
+.slide-indicador {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.slide-indicador li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slide-circulo {
+  color: #828282;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.slide-circulo:hover {
+  color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo {
+  color: #428bca;
+}
+
+.contact {
+  background-image: url("https://unsplash.com/es/fotos/un-gran-cumulo-estelar-en-medio-de-un-cielo-nocturno-69350vFznbs");
+}
+
+.contact p {
+  font-size: 1.6rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.contact i {
+  font-size: 7rem;
+  color: rgb(252, 163, 17);
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact i:hover {
+  border-color: rgb(252, 163, 17);
+  transform: scale(1.5);
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 10rem 3% 2rem;
+  }
+  .projects {
+    padding-bottom: 7rem;
+  }
+  .skills {
+    padding-bottom: 7rem;
+  }
+}
+@media (max-width: 895px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: black;
+    border-top: 0.1rem solid black;
+    display: none;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  .home {
+    flex-direction: column;
+    margin: 5rem 4rem;
+  }
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
+  .home-content h1 {
+    font-size: 5rem;
+  }
+  .home-content img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+  .about {
+    flex-direction: column-reverse;
+  }
+  .about-content {
+    margin: 1rem 4rem;
+  }
+  .about img {
+    width: 70vw;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .projects h2 {
+    margin-bottom: 3rem;
+  }
+  .skills h2 {
+    margin-bottom: 3rem;
+  }
+  .project-container {
+    grid-template-columns: repeat(2, 1f);
+  }
+}/*# sourceMappingURL=index.css.map */

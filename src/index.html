@@ -3,8 +3,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <title>EduardoValverde</title>
+    <script src="https://kit.fontawesome.com/3742a4b705.js" crossorigin="anonymous"></script>
   </head>
-  <body></body>
+  <body>
+<header class="header">
+  <a href="#home" class="logo">Eduardo <span>Valverde</span></a>
+
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Work Experience</a>
+    <a href="#contact" >Contact</a>
+  </nav>
+</header>
+
+<section class="home" id="home">
+  <div class="home-content">
+   <h1>Welcome!</h1>
+   <h3 class="text-animation">I´m a Industrial Engineer/<br>Web Developer</br></h3>
+   <p>“Real knowledge is to know the extent of one’s ignorance.” – Confucius</p>
+  </div>
+  <div class="picture">
+    <img src="picture.jpeg" alt=""></img>
+  </div>  
+</section>
+
+<section class="about" id="about">
+  <div class="about-img">
+    <i class="fa-solid fa-address-card fa-bounce"></i>
+  </div>
+
+  <div class="about-content">
+    <h2 class="heading">About Me</h2>
+    <h3 class="text-animation">I´m <span></span></h3>
+    <p>Bilingual industrial engineer with 6 years of experience in maintenance and production areas, focused on results and continuous process improvement.<br></br>
+
+      <br>Specialized in the development and execution of improvement projects using the kaizen method.</br>
+      
+      <br> Always ready for new challenges.</br></p>
+  </div>
+</section>
+
+  <section class="projects" id="projects">
+<h2 class="heading">Projects</h2>
+<div class="project-container">
+  <div class="project-box">
+<h3>Excel </h3>
+<i class="fa-solid fa-code"></i>
+<p>I have experience in the development of projects programming in visualbasic of microsoft excel.</p>
+  </div>
+  <div class="project-box">
+    <h3>My Personal Portfolio </h3>
+     <i class="fa-solid fa-laptop-code"></i>
+    <p>I have experience in web development, having created my own web portfolio.</p>
+      </div>
+      
+</div>
+</section>
+
+<section class="skills" id="skills">
+  <h2 class="heading">Skills</h2>
+  <div class="skills-container">
+    <div class="skills-box">
+  <h3>Excel</h3>
+  <i class="fa-brands fa-microsoft"></i>
+    </div>
+    <div class="skills-box">
+      <h3>HTML5 </h3>
+      <i class="fa-brands fa-html5"></i>
+        </div>
+        <div class="skills-box">
+      <h3>JS</h3>
+      <i class="fa-brands fa-js"></i>
+        </div>
+        <div class="skills-box">
+          <h3>CSS</h3>
+          <i class="fa-brands fa-css3-alt"></i>
+            </div>
+  </div>
+</section>
+
+<section class="workexperience" id="experience">
+  <h2 class="heading">Work Experience</h2>
+  <div class="slide">
+    <div class="slide-inner">
+        <input class="slide-open" type="radio" id="slide-1" 
+              name="slide" aria-hidden="true" hidden="" checked="checked">
+        <div class="slide-item">
+          <div class="workexperience-img">
+            <img src="Grupak.png" alt=""></img>
+          </div>
+          <div class="workexperience-content">
+              <h1>Grupak </h1>
+              <h2>Maintenance Management Assistant</h2>
+              <p>Monitor the correct execution of the activities and procedures of the maintenance department in 3 plants and 6 suppliers.</p>
+              <h2>Process Control Engineer</h2>
+              <p>Validate that the process indicators (speed, shrinkage and lost time) are within the appropriate parameters to meet the production objectives.</p>
+          </div>
+        
+        </div>
+        <input class="slide-open" type="radio" id="slide-2" 
+              name="slide" aria-hidden="true" hidden="">
+        <div class="slide-item">
+          <div class="workexperience-img2">
+            <img src="logo-givaudan.png" alt=""></img>
+          </div>
+          <div class="workexperience-content2">
+              <h1>Givaudan </h1>
+              <h2>Production Trainee</h2>
+              <p>Understand the process and master the formulations to generate a standardization at LATAM level, using SAP.</p>
+          </div>
+        </div>
+        <input class="slide-open" type="radio" id="slide-3" 
+              name="slide" aria-hidden="true" hidden="">
+        <div class="slide-item">
+          <div class="workexperience-img3">
+            <img src="DMC.png" alt=""></img>
+          </div>
+          <div class="workexperience-content3">
+              <h1>DMC Ingeniería</h1>
+              <h2>Supervisor</h2>
+              <p>Supervised crews for electrical installations, preventive maintenance of refrigeration equipment and automatic curtains.</p>
+          </div>
+        </div>
+        <label for="slide-3" class="slide-control prev control-1">‹</label>
+        <label for="slide-2" class="slide-control next control-1">›</label>
+        <label for="slide-1" class="slide-control prev control-2">‹</label>
+        <label for="slide-3" class="slide-control next control-2">›</label>
+        <label for="slide-2" class="slide-control prev control-3">‹</label>
+        <label for="slide-1" class="slide-control next control-3">›</label>
+        <ol class="slide-indicador">
+            <li>
+                <label for="slide-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+                <label for="slide-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+                <label for="slide-3" class="slide-circulo">•</label>
+            </li>
+        </ol>
+    </div>
+</div>
+</section>
+
+
+<section class="contact" id="contact">
+  
+  <h2 class="heading">Contact Me</h2>
+  <p>Let´s work together!</p>
+  <div class="icons">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-github"></i>
+</div>
+</section>
+  </body>
 </html>
